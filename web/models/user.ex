@@ -1,5 +1,6 @@
 defmodule Chat.User do
-  use Chat.Web, :model
+  use Ecto.Schema
+  import Ecto.Changeset
 
   schema "chatters" do
     field :username, :string, size: 20
